@@ -2425,11 +2425,16 @@ const ScheduleSync={STORAGE_KEYS:{DAILY_SCHEDULE:'dailyScheduleData',VISUAL_SCHE
         console.log('📅 [Daily Schedule] Dates found:', Object.keys(uploadedScheduleData));
 
         // Merge uploaded data with existing scheduleData
+        // IMPORTANT: Hardcoded scheduleData takes priority over uploaded data
         let mergedCount = 0;
         Object.keys(uploadedScheduleData).forEach(date => {
-            scheduleData[date] = uploadedScheduleData[date];
-            mergedCount++;
-            console.log(`✅ [Daily Schedule] Merged data for ${date}`);
+            if (!scheduleData[date]) {
+                scheduleData[date] = uploadedScheduleData[date];
+                mergedCount++;
+                console.log(`✅ [Daily Schedule] Merged data for ${date}`);
+            } else {
+                console.log(`⏭️ [Daily Schedule] Skipped ${date} - hardcoded data exists`);
+            }
         });
 
         if (mergedCount > 0) {
