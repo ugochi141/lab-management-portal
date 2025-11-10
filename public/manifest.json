@@ -2,14 +2,14 @@
   "name": "EPIC Beaker Laboratory Portal",
   "short_name": "EPIC Beaker Lab",
   "description": "Production-ready healthcare laboratory management system for phlebotomy staff scheduling and operations",
-  "start_url": "/largo-lab-portal/",
+  "start_url": "/lab-management-portal/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#1e88e5",
   "orientation": "portrait-primary",
   "icons": [
     {
-      "src": "/largo-lab-portal/assets/icons/epic-beaker-favicon.svg",
+      "src": "/lab-management-portal/assets/icons/epic-beaker-favicon.svg",
       "sizes": "any",
       "type": "image/svg+xml"
     }
@@ -21,21 +21,21 @@
       "name": "Schedule",
       "short_name": "Schedule",
       "description": "Create and manage staff schedules",
-      "url": "/largo-lab-portal/schedule",
+      "url": "/lab-management-portal/schedule",
       "icons": []
     },
     {
       "name": "Dashboard",
       "short_name": "Dashboard",
       "description": "Manager dashboard and tools",
-      "url": "/largo-lab-portal/dashboard",
+      "url": "/lab-management-portal/dashboard",
       "icons": []
     },
     {
       "name": "Safety",
       "short_name": "Safety",
       "description": "Safety incident reporting",
-      "url": "/largo-lab-portal/safety",
+      "url": "/lab-management-portal/safety",
       "icons": []
     }
   ]

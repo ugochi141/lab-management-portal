@@ -11,7 +11,7 @@ import './styles/globals.css';
 function App() {
   return (
     <ErrorBoundary>
-      <Router basename="/largo-lab-portal">
+      <Router basename="/lab-management-portal">
         <div className="min-h-screen bg-neutral-50">
           <a href="#main-content" className="skip-link">
             Skip to main content

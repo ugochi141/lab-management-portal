@@ -11,10 +11,10 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.svg', 'robots.txt', 'apple-touch-icon.png'],
       manifest: {
-        name: 'Largo Laboratory Portal',
-        short_name: 'Largo Lab',
+        name: 'EPIC Beaker Laboratory Portal',
+        short_name: 'EPIC Beaker Lab',
         description: 'Healthcare laboratory portal for staff scheduling and management',
-        theme_color: '#0066cc',
+        theme_color: '#1e88e5',
         background_color: '#ffffff',
         display: 'standalone',
         icons: [
@@ -68,7 +68,7 @@ export default defineConfig({
       '@styles': path.resolve(__dirname, './src/styles')
     }
   },
-  base: '/largo-lab-portal/',
+  base: '/lab-management-portal/',
   build: {
     outDir: 'dist',
     sourcemap: true,

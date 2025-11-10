@@ -7,7 +7,7 @@ import './styles/globals.css';
 if ('serviceWorker' in navigator && import.meta.env.PROD) {
   window.addEventListener('load', () => {
     navigator.serviceWorker
-      .register('/largo-lab-portal/sw.js')
+      .register('/lab-management-portal/sw.js')
       .then((registration) => {
         console.log('Service Worker registered:', registration);
       })
