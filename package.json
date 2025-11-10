@@ -2,6 +2,7 @@
   "name": "largo-lab-portal",
   "version": "3.0.0",
   "private": true,
+  "type": "module",
   "description": "Production-ready healthcare laboratory portal for phlebotomy staff scheduling and management",
   "scripts": {
     "dev": "vite",
