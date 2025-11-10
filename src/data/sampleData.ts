@@ -266,11 +266,7 @@ export const sampleIncidents: SafetyIncident[] = [
 // Function to load sample data into stores
 export const loadSampleData = () => {
   // This can be imported and called from main.tsx or a demo mode toggle
-  console.log('Sample data available:', {
-    staff: sampleStaff.length,
-    meetings: sampleMeetings.length,
-    incidents: sampleIncidents.length,
-  });
+  // Sample data available for demonstration purposes
   
   return {
     sampleStaff,

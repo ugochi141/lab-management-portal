@@ -64,7 +64,7 @@ const InteractiveScheduleManager: React.FC = () => {
     if (currentSchedule) {
       detectConflicts(currentSchedule.id);
     }
-  }, [currentSchedule?.entries.length, detectConflicts]);
+  }, [currentSchedule, detectConflicts]);
 
   const handleDragStart = (event: DragStartEvent) => {
     setActiveStaffId(event.active.id as string);
