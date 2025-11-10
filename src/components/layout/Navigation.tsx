@@ -25,10 +25,10 @@ const Navigation: React.FC = () => {
           <div className="flex items-center">
             <Link to="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
               <div className="w-10 h-10 bg-primary-500 rounded-lg flex items-center justify-center text-white text-xl font-bold">
-                L
+                EB
               </div>
               <div>
-                <h1 className="text-lg font-bold text-primary-700">Largo Laboratory</h1>
+                <h1 className="text-lg font-bold text-primary-700">EPIC Beaker Lab</h1>
                 <p className="text-xs text-neutral-600">Operations Portal</p>
               </div>
             </Link>

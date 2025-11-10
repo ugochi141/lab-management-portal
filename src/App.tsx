@@ -34,7 +34,7 @@ function App() {
               <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
                 <div>
                   <p className="text-sm text-neutral-600">
-                    © {new Date().getFullYear()} Largo Laboratory Portal
+                    © {new Date().getFullYear()} EPIC Beaker Laboratory Portal
                   </p>
                   <p className="text-xs text-neutral-500 mt-1">
                     Healthcare laboratory operations management system

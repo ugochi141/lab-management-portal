@@ -1,15 +1,15 @@
 {
-  "name": "Largo Laboratory Portal",
-  "short_name": "Largo Lab",
+  "name": "EPIC Beaker Laboratory Portal",
+  "short_name": "EPIC Beaker Lab",
   "description": "Production-ready healthcare laboratory management system for phlebotomy staff scheduling and operations",
   "start_url": "/largo-lab-portal/",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#0066cc",
+  "theme_color": "#1e88e5",
   "orientation": "portrait-primary",
   "icons": [
     {
-      "src": "/largo-lab-portal/assets/icons/kaiser-favicon.svg",
+      "src": "/largo-lab-portal/assets/icons/epic-beaker-favicon.svg",
       "sizes": "any",
       "type": "image/svg+xml"
     }

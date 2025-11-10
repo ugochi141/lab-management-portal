@@ -1,4 +1,4 @@
-// Core type definitions for Largo Lab Portal
+// Core type definitions for EPIC Beaker Lab Portal
 
 export enum PhlebotomyRole {
   LEAD_PHLEBOTOMIST = 'Lead Phlebotomist',

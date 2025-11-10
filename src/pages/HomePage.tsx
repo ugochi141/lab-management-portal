@@ -39,7 +39,7 @@ const HomePage: React.FC = () => {
       <div className="bg-gradient-to-r from-primary-500 to-primary-700 rounded-2xl shadow-strong p-8 md:p-12 mb-8 text-white">
         <div className="max-w-3xl">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            Welcome to Largo Laboratory Portal
+            Welcome to EPIC Beaker Laboratory Portal
           </h1>
           <p className="text-xl md:text-2xl opacity-95 mb-6">
             Production-ready healthcare laboratory management system for phlebotomy staff scheduling and operations
