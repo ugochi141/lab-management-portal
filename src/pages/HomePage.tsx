@@ -18,6 +18,14 @@ const HomePage: React.FC = () => {
       color: 'success',
     },
     {
+      title: 'Lab Order Dashboard',
+      description: 'Real-time laboratory order tracking with analytics and status monitoring',
+      icon: '🔬',
+      link: 'https://lab-order-dashboard.vercel.app/',
+      color: 'info',
+      external: true,
+    },
+    {
       title: 'Safety & Compliance',
       description: 'Incident reporting, safety protocols, and regulatory compliance tracking',
       icon: '🛡️',
@@ -67,12 +75,8 @@ const HomePage: React.FC = () => {
           Portal Features
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {features.map((feature) => (
-            <Link
-              key={feature.title}
-              to={feature.link}
-              className="group card hover:shadow-strong transition-all duration-300"
-            >
+          {features.map((feature) => {
+            const cardContent = (
               <div className="flex items-start gap-4">
                 <div className="text-5xl" aria-hidden="true">
                   {feature.icon}
@@ -85,15 +89,35 @@ const HomePage: React.FC = () => {
                     {feature.description}
                   </p>
                   <div className="mt-4 flex items-center gap-2 text-primary-600 font-semibold">
-                    <span>Learn more</span>
+                    <span>{feature.external ? 'Visit dashboard' : 'Learn more'}</span>
                     <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                     </svg>
                   </div>
                 </div>
               </div>
-            </Link>
-          ))}
+            );
+
+            return feature.external ? (
+              <a
+                key={feature.title}
+                href={feature.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group card hover:shadow-strong transition-all duration-300"
+              >
+                {cardContent}
+              </a>
+            ) : (
+              <Link
+                key={feature.title}
+                to={feature.link}
+                className="group card hover:shadow-strong transition-all duration-300"
+              >
+                {cardContent}
+              </Link>
+            );
+          })}
         </div>
       </div>
 
